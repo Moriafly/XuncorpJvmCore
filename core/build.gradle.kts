@@ -5,7 +5,7 @@ plugins {
 }
 
 group = "com.github.Moriafly"
-version = "0.1.0-dev03"
+version = "0.1.0-dev04"
 
 java {
     sourceCompatibility = JavaVersion.VERSION_11
@@ -14,4 +14,12 @@ java {
 
 dependencies {
     testImplementation("junit:junit:4.13.2")
+}
+
+publishing {
+    publications {
+        create<MavenPublication>("maven") {
+            from(components["java"])
+        }
+    }
 }
