@@ -5,11 +5,11 @@ plugins {
 }
 
 group = "com.github.Moriafly"
-version = "0.1.0-dev04"
+version = "0.1.0-dev05"
 
 java {
-    sourceCompatibility = JavaVersion.VERSION_11
-    targetCompatibility = JavaVersion.VERSION_11
+    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
 }
 
 dependencies {
